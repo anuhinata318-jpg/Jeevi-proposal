@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Jeevi 💖</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(-45deg, #ff758c, #ff7eb3, #a18cd1, #fbc2eb);
+            background-size: 400% 400%;
+            animation: backgroundMove 8s ease infinite;
+        }
+
+        @keyframes backgroundMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 35px;
+            animation: float 6s linear infinite;
+        }
+
+        .heart:nth-child(1) {
+            left: 10%;
+            animation-delay: 1s;
+        }
+
+        .heart:nth-child(2) {
+            left: 30%;
+            animation-delay: 3s;
+        }
+
+        .heart:nth-child(3) {
+            left: 55%;
+            animation-delay: 0s;
+        }
+
+        .heart:nth-child(4) {
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        @keyframes float {
+            0% {
+                bottom: -50px;
+                opacity: 0;
+                transform: scale(0.5) rotate(0deg);
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                bottom: 100%;
+                opacity: 0;
+                transform: scale(1.5) rotate(360deg);
+            }
+        }
+
+        .box {
+            position: relative;
+            z-index: 2;
+            width: 90%;
+            max-width: 650px;
+            padding: 50px 30px;
+            background: rgba(255,255,255,0.25);
+            backdrop-filter: blur(12px);
+            border-radius: 30px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            animation: appear 2s ease;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translate(-50%, -40%) scale(0.7);
+            }
+
+            to {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px white;
+            }
+
+            to {
+                text-shadow: 0 0 30px #fff,
+                             0 0 50px #ff1493;
+            }
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .question {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        button {
+            padding: 15px 35px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #e91e63;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 25px white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hearts">
+        <div class="heart">💖</div>
+        <div class="heart">💕</div>
+        <div class="heart">💗</div>
+        <div class="heart">💓</div>
+    </div>
+
+    <div class="box">
+
+        <h1>Hey Jeevi 💖</h1>
+
+        <h2>A Little Surprise For You ✨</h2>
+
+        <p>
+            You are a very special person to me.
+            So I made this little page just for you. 🌸
+        </p>
+
+        <div class="question">
+            Will you be my special person? 💕
+        </div>
+
+        <button onclick="alert('Thank you, Jeevi! 💖✨')">
+            Yes 💗
+        </button>
+
+    </div>
+
+</body>
+</html>
+
